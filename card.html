@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Marvel App</title>
+</head>
+
+<body>
+    <!--CONTENT-->
+    <!--NAVBAR-->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <div class="container px-5">
+            <!--LOGO-->
+            <a href="#" class="navbar-brand">
+                <img src="images/marvel.svg" alt="" width="100">
+            </a>
+            <!--TOGGLER (BARRITAS MOBILE)-->
+            <button 
+            class="navbar-toggler" 
+            role="button" 
+            data-bs-toggle="collapse"
+            data-bs-target="#navbar_menu"
+            aria-controls="navbar_menu"
+            aria-expanded="false"
+            aria-label="Toggle"
+            >
+            <span class="navbar-toggler-icon">
+
+            </span>
+            </button>
+
+            <!--MENU DE NAVEGACION-->
+            <div class="navbar-collapse collapse" id="navbar_menu">
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Nosotros</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a 
+                        href="#" 
+                        class="nav-link dropdown-toggle" 
+                        id="drop_products" 
+                        role="button"
+                        data-bs-toggle="dropdown" 
+                        aria-expanded="false"
+                        >Tienda</a>
+                        <ul class="dropdown-menu" aria-labelledby="drop_products">
+                            <li>
+                                <a href="#" class="dropdown-item">Todos</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Comics</a>
+                            </li>
+                            <li>
+                                <a href="#" class="dropdown-item">Series</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <!--LISTA DE ITEMS-->
+            <ul class="d-flex">
+                <button id="btn_cart" class="btn btn-outline-dark">
+                    <i class="bi bi-cart-fill"></i>
+                    Carrito
+                    <span class="badge rounded-pill bg-dark ms-1">0</span>
+                </button>
+            </ul>
+        </div>
+    </nav>
+
+    <!--CONTENT-->
+    <section class="py-5 me-3">
+      <div class="container">
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="images/infinity_g.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title fw-bolder">Infinity Gauntlet: Edición Deluxe (1991)</h5>
+                <br>
+                <h5 class="card-text"> $100.00 </h5>
+                <div class="d-flex text-warning small">
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <span class="px-2 text-dark">5</span>
+              </div>
+              <p class="card-text"><b>Formato:</b> Comic (Pasta dura)</p>
+              <br>
+              <p class="card-text fw-bold">Descripción:</p>
+              <p class="card-text">Para el Titán Loco, Thanos, el Guantelete del Infinito era el Santo Grial,
+                el premio final que codiciaba por encima de todo. Con él podría obtener la omnipotencia: el control absoluto de todos 
+                los aspectos del tiempo, el espacio, el poder, la realidad, la mente y el alma. Pero la obtención del poder supremo 
+                significó el comienzo de una pesadilla negra para todo el universo. Ahora, al borde del Armagedón y liderados por el 
+                misterioso Adam Warlock, los superhéroes de la Tierra se unen en un intento desesperado por frustrar la loca caída de 
+                este dios nihilista hacia la autodestrucción galáctica. Si los héroes fallan, los dioses astrales del universo esperan 
+                para entrar en la refriega. Pero en un conflicto cósmico tan impresionante, ¿alguien prevalecerá? ¿Sobrevivirá alguien? 
+                ¡La epopeya del Infinito se recopila en las paginas de la coleccion del Gauntelete!</p>
+                <p class="card-text"><b>Disponibilidad en stock:   </b>15</p>
+                <br>
+                <p class="card-text fw-bold">Creadores:</p>
+                <div class="card-text fw-light">
+                    <p>Jim Stalrin (Escritor)
+                    <br>George Peréz (Dibujante)
+                    <br>Ron Lim(Dibujante)</p>
+                <div></div>
+                <p>Cantidad :
+                <button type="button" class="btn btn-dark"> + </button>
+                <span class="badge rounded-pill bg-secondary ms-1"> 0 </span>
+                <button type="button" class="btn btn-dark"> - </button> 
+                </p>
+                <div class="d-grid gap-2">
+                  <button class="btn btn-danger" type="button">Agregar al carrito</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+
+
+    <!--PIE DE PAGINA-->
+    <footer class="bg-dark py-5">
+        <div class="container text-white">
+          <p class="text-center m-0">Copyright &copy; 2022</p>
+        </div>
+      </footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
