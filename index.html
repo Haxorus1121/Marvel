@@ -105,167 +105,61 @@
 
     <!--CONTENT-->
     <section class="py-5">
-        <div class="container at-2">
-            <p class="h1">Nuevos artículos</p>
+      <div class="container mt-2">
+        <p class="h1 mb-5">New Releases</p>
 
-            <div class="row gx-3 row-cols-2 row-cols-3 row-cols-lg-5 justify-content-center">
-                <div class="col mb-5">
-                  <div class="card">
-                    <img
-                      class="card-img-top" src="images/cap.jpeg" alt="...">
-                        <div class="card-body">
-                            <h4 id="name" class="fw-folder">
-                              Captain America/Iron Man (2021)
-                            </h4>
-                            <div class="d-flex justify-content-center text-warning small">
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star-fill"></i>
-                                <i class="bi bi-star"></i>
-                                 <span class="px-2 text-dark">4</span>
-                            </div>
-                            <span
-                              class="text-muted text-decoration-line-through"
-                            >
-                              $80.00
-                            </span>
-                            <span id="price">$50.00</span>
-                          </div>
+        <div
+          id="card_container"
+          class="row gx-3 row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5"
+        >
+          <!--PLANTILLA DEL CARD -->
+          <div
+            class="col mb-5"
+            id="card_template"
+            style="display: none"
+          >
+            <div class="card">
+              <img
+                class="card-img-top comic_img"
+                src="#"
+                alt="..."
+              />
+              <div class="card-body text-center">
+                <h5 class="fw-bolder comic_name">
+                  {COMIC NAME}
+                </h5>
+                <div
+                  class="d-flex justify-content-center text-warning small"
+                >
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star-fill"></i>
+                  <i class="bi bi-star"></i>
+                  <span class="px-2 text-dark">4.5</span>
+                </div>
 
-                        <div class="card-footer border-top-0 bg-transparent">
-                            <div class="text-center">
-                                <button class="btn btn-outline-dark"> Agregar al carrito</button>
-                            </div>
-                        </div>
-                    </div>
+                <span
+                  class="text-muted text-decoration-line-through"
+                >
+                  {ORIGINAL PRICE}
+                </span>
+                <span>{PRICE}</span>
+              </div>
+
+              <div
+                class="card-footer pb-4 border-top-0 bg-transparent"
+              >
+                <div class="text-center">
+                  <button class="btn btn-outline-dark">
+                    Add to cart
+                  </button>
                 </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                      <img
-                        class="card-img-top" src="images/kate_bishop.jpg" alt="...">
-                          <div class="card-body">
-                              <h4 id="name" class="fw-folder">
-                                Hawkeye (Kate Bishop) Vol.1 (2016)
-                              </h4>
-                              <div class="d-flex justify-content-center text-warning small">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                   <span class="px-2 text-dark">5</span>
-                              </div>
-                              <span
-                                class="text-muted text-decoration-line-through"
-                              >
-                                $80.00
-                              </span>
-                              <span id="price">$50.00</span>
-                            </div>
-  
-                          <div class="card-footer border-top-0 bg-transparent">
-                              <div class="text-center">
-                                  <button class="btn btn-outline-dark"> Agregar al carrito</button>
-                              </div>
-                          </div>
-                      </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                      <img
-                        class="card-img-top" src="images/house_of_m.jpg" alt="...">
-                          <div class="card-body">
-                              <h4 id="name" class="fw-folder">
-                                The Uncanny X-Men:House of M (2006)
-                              </h4>
-                              <div class="d-flex justify-content-center text-warning small">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                   <span class="px-2 text-dark">5</span>
-                              </div>
-                              <span
-                                class="text-muted text-decoration-line-through"
-                              >
-                                $80.00
-                              </span>
-                              <span id="price">$50.00</span>
-                            </div>
-  
-                          <div class="card-footer border-top-0 bg-transparent">
-                              <div class="text-center">
-                                  <button class="btn btn-outline-dark"> Agregar al carrito</button>
-                              </div>
-                          </div>
-                      </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                      <img
-                        class="card-img-top" src="images/dare.jpg" alt="...">
-                          <div class="card-body">
-                              <h4 id="name" class="fw-folder">
-                                Daredevil: The man whithout fear (1998)
-                              </h4>
-                              <div class="d-flex justify-content-center text-warning small">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star"></i>
-                                   <span class="px-2 text-dark">4.5</span>
-                              </div>
-                              <span
-                                class="text-muted text-decoration-line-through"
-                              >
-                                $80.00
-                              </span>
-                              <span id="price">$50.00</span>
-                            </div>
-  
-                          <div class="card-footer border-top-0 bg-transparent">
-                              <div class="text-center">
-                                  <button class="btn btn-outline-dark"> Agregar al carrito</button>
-                              </div>
-                          </div>
-                      </div>
-                </div>
-                <div class="col mb-5">
-                    <div class="card h-100">
-                      <img
-                        class="card-img-top" src="images/spiderman.jpg" alt="...">
-                          <div class="card-body">
-                              <h4 id="name" class="fw-folder">
-                                The Amazing Spiderman #1 (1963)
-                              </h4>
-                              <div class="d-flex justify-content-center text-warning small">
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                  <i class="bi bi-star-fill"></i>
-                                   <span class="px-2 text-dark">5</span>
-                              </div>
-                              <span
-                                class="text-muted text-decoration-line-through"
-                              >
-                                $80.00
-                              </span>
-                              <span id="price">$50.00</span>
-                            </div>
-  
-                          <div class="card-footer border-top-0 bg-transparent">
-                              <div class="text-center">
-                                  <button class="btn btn-outline-dark"> Agregar al carrito</button>
-                              </div>
-                          </div>
-                      </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </section>
 
 
